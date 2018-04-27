@@ -11,14 +11,14 @@ int main(){
 	char str[60];
 	
 	//ask user for input (integer to find factorial of)
-	printf("This is a handy dandy factorial calculator. A factorial is defined as an integer multiplied by every integer that comes before it." "\nPlease enter an integer you would like to calculate the factorial of:");
+	printf("This is a handy dandy factorial calculator. A factorial is defined as an integer multiplied by every integer that comes before it. \nPlease enter an integer you would like to calculate the factorial of:");
 	//do not use scanf because it assumes that you will get correctly formated input.. so good if its from another program, but not user input
 		//converts user input into an integer
 	input=fgets(str,10,stdin);
-	num=atoi(input);
+	num=atoi(str);
 		printf("Calculating factorial for %d \n", num);
-	/*Marshall said to add this part*/	
-	if (num<=0){
+	/*Marshall said to add this part. It checks to see if the input was a positive number or a negative number and ask user for new input if neg.*/
+	while (num<=0){
 		printf ("Please enter a postive number.\n");
 	}
 	else {
