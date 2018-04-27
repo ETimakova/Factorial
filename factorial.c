@@ -7,7 +7,7 @@ long long unsigned int factorial(long long unsigned int n);
 
 int main(){
 	char *input;
-	long long unsigned int num;
+	int num;
 	char str[60];
 	
 	//ask user for input (integer to find factorial of)
@@ -16,10 +16,10 @@ int main(){
 		//converts user input into an integer
 	input=fgets(str,10,stdin);
 	num=atoi(input);
-		printf("Calculating factorial for %llu \n", num);
+		printf("Calculating factorial for %d \n", num);
 	/*Marshall said to add this part*/	
 	if (num<=0){
-		printf ("Please enter a postive number.");
+		printf ("Please enter a postive number.\n");
 	}
 	else {
 	//prints answer to factorial equation based on user input
