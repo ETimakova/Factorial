@@ -18,14 +18,15 @@ int main(){
 	num=atoi(str);
 		printf("Calculating factorial for %d \n", num);
 	/*Marshall said to add this part. It checks to see if the input was a positive number or a negative number and ask user for new input if neg.*/
-	for (num<=0){
+	if (num<=0)
 		printf ("Please enter a postive number.\n");
-	}
-	
-	else {
+		input=fgets(str,10,stdin);
+		num=atoi(str);
+		printf("Calculating factorial for %d \n", num);
+	else 
 	//prints answer to factorial equation based on user input
-	printf("The factorial is: %llu \n", factorial(num));
-    }
+		printf("The factorial is: %llu \n", factorial(num));
+    
 	return 0;
 
 }
